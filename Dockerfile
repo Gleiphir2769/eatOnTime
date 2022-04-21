@@ -9,7 +9,7 @@ ARG OUTPUT_PATH=/src/bin
 
 WORKDIR /src
 
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct && go mod download
 
 COPY cmd ./  meal_reminder.go ./  util ./
