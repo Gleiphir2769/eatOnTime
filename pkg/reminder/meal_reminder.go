@@ -1,4 +1,4 @@
-package main
+package reminder
 
 import (
 	"eatOnTime/util"

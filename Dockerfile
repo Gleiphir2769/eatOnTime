@@ -12,7 +12,7 @@ WORKDIR /src
 COPY go.mod ./
 RUN go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct && go mod download
 
-COPY cmd ./  meal_reminder.go ./  util ./
+COPY cmd ./  pkg ./  util ./
 
 RUN GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o ${OUTPUT_PATH}/${PROJECT_NAME} $BUILD_PATH
 

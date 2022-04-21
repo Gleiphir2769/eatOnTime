@@ -1,5 +1,7 @@
 package main
 
+import "eatOnTime/pkg/reminder"
+
 func main() {
-	Remind()
+	reminder.Remind()
 }
