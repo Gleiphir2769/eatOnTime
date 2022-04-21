@@ -21,6 +21,7 @@ func Remind() {
 			sendMsg(msg)
 		}
 		time.Sleep(time.Minute)
+		fmt.Println(fmt.Sprintf("tick now %d:%d", currentHour, currentMin))
 	}
 }
 
