@@ -29,4 +29,4 @@ RUN adduser -D ${PROJECT_NAME}
 USER ${PROJECT_NAME}
 USER root
 
-# ENTRYPOINT ["/usr/local/bin/cloud-md-monitor -c=/cloud-md-monitor-config/config.yaml"]
+ENTRYPOINT ["/usr/local/bin/eatOnTime"]
