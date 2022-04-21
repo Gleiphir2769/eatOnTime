@@ -1,6 +1,8 @@
-package eatOnTime
+package main
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestRemind(t *testing.T) {
 	Remind()

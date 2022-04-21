@@ -1,4 +1,4 @@
-package eatOnTime
+package main
 
 import (
 	"eatOnTime/util"
