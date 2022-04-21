@@ -12,7 +12,7 @@ WORKDIR /src
 COPY go.mod go.sum ./
 RUN go env -w GO111MODULE=on && go env -w GOPROXY=https://goproxy.cn,direct && go mod download
 
-COPY pkg ./ cmd ./  core ./ handler ./ lib ./ router ./
+COPY cmd ./  meal_reminder.go ./  util ./
 
 RUN GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o ${OUTPUT_PATH}/${PROJECT_NAME} $BUILD_PATH
 
